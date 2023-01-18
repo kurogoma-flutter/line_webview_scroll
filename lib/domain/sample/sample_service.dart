@@ -17,6 +17,6 @@ class SampleService {
   final SampleRepository sampleRepository;
 
   Future<List<SampleModel>> fetchSampleModelList() async {
-    return sampleRepository.fetchSampleModelList();
+    return await sampleRepository.fetchSampleModelList();
   }
 }
