@@ -14,10 +14,6 @@ class SampleHomePage extends HookConsumerWidget {
     final state = ref.watch(sampleNotifierProvider); // stateの呼び出し
     final notifier = ref.read(sampleNotifierProvider.notifier); // notifierの呼び出し
 
-    // 使い方
-    // state : state.sampleList
-    // notifier : notifier.init()
-
     // Widget Size
 
     // Widget Padding
@@ -28,17 +24,24 @@ class SampleHomePage extends HookConsumerWidget {
       appBar: AppBar(
         title: const Text('Sample Home Page'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Sample Home Page',
-              style: Theme.of(context).textTheme.headline4,
+      body: state.sampleList.isEmpty
+          ? const Center(
+              child: CircularProgressIndicator(),
+            )
+          : Padding(
+              padding: const EdgeInsets.all(12),
+              child: ListView.builder(
+                itemCount: state.sampleList.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(
+                      state.sampleList[index].id.toString(),
+                    ),
+                    subtitle: Text(state.sampleList[index].name),
+                  );
+                },
+              ),
             ),
-          ],
-        ),
-      ),
     );
   }
 }
