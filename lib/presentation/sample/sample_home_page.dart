@@ -33,11 +33,13 @@ class SampleHomePage extends HookConsumerWidget {
               child: ListView.builder(
                 itemCount: state.sampleList.length,
                 itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(
-                      state.sampleList[index].id.toString(),
+                  return Card(
+                    child: ListTile(
+                      title: Text(
+                        state.sampleList[index].id.toString(),
+                      ),
+                      subtitle: Text(state.sampleList[index].name),
                     ),
-                    subtitle: Text(state.sampleList[index].name),
                   );
                 },
               ),
