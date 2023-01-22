@@ -26,5 +26,5 @@ jobs:
       with:
         repoToken: "${{ secrets.GITHUB_TOKEN }}"
         firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEB_SCROLL_B2B62 }}"
-        projectId: point-estimation
+        projectId: web-scroll-b2b62
         channelId: live
