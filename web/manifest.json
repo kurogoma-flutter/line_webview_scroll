@@ -1,6 +1,6 @@
 {
-    "name": "layer_architecture_template",
-    "short_name": "layer_architecture_template",
+    "name": "web_scroll",
+    "short_name": "web_scroll",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

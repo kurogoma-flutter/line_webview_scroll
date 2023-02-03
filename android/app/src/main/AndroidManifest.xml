@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.layer_architecture_template">
+    package="com.example.web_scroll">
    <application
-        android:label="layer_architecture_template"
+        android:label="web_scroll"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,4 +1,4 @@
-package com.example.layer_architecture_template
+package com.example.web_scroll
 
 import io.flutter.embedding.android.FlutterActivity
 

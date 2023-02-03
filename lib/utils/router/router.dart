@@ -1,7 +1,7 @@
 // ボトムナビゲーションを非表示にしたいルートパスを指定
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:layer_architecture_template/presentation/error/error_page.dart';
+import 'package:web_scroll/presentation/error/error_page.dart';
 
 import '../../presentation/sample/sample_home_page.dart';
 import '../../presentation/sample_detail/sample_detail_page.dart';
